@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <a href="index.html" class="nav-mark">YOUR<span>/</span>NAME</a>
+            <nav class="nav-links">
+                <a href="index.html#about">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#work">Work</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">Menu</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE HEADER -->
+        <section class="page-hero">
+            <div class="wrap">
+                <div class="tag">Doc — 002 / About</div>
+                <h1 class="page-title">The person behind the <span class="accent-word">pixels.</span></h1>
+                <p class="page-lede">A closer look at how I got into front-end work, what I believe about building
+                    interfaces, and a few of the people I've built them for.</p>
+            </div>
+        </section>
+
+        <!-- STORY / TIMELINE -->
+        <section id="story">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <div class="section-title">How I got here</div>
+                    <div class="tag">01 — Story</div>
+                </div>
+
+                <div class="timeline reveal">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-title">First website, built out of stubbornness</div>
+                        <div class="timeline-body">Taught myself HTML and CSS by rebuilding a local coffee shop's menu
+                            page from scratch, just to prove I could match the fonts exactly. I couldn't, not for
+                            another year — but I kept trying.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-title">Went deep on interaction detail</div>
+                        <div class="timeline-body">Started obsessing over the small stuff — easing curves, focus states,
+                            the exact blur radius that makes a glass panel feel like glass instead of fog. Built dozens
+                            of login and registration forms just to practice depth and motion.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-title">First freelance clients</div>
+                        <div class="timeline-body">Took on my first paid front-end projects, mostly branded e-commerce
+                            sites, and learned that a design only matters if it still looks right on a cracked phone
+                            screen in bad wifi.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">Now</div>
+                        <div class="timeline-title">Building from Phnom Penh, working everywhere</div>
+                        <div class="timeline-body">Splitting time between client work and personal practice — still
+                            rebuilding interfaces I admire, still chasing the 2px that's slightly off.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALUES -->
+        <section id="approach">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <div class="section-title">How I work</div>
+                    <div class="tag">02 — Principles</div>
+                </div>
+                <div class="values-grid reveal">
+                    <div class="value-card">
+                        <span class="value-index tag">01</span>
+                        <h3>Detail is the design</h3>
+                        <p>Spacing, easing, and focus states aren't polish added at the end — they're decided alongside
+                            the layout, from the first draft.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-index tag">02</span>
+                        <h3>Understand every effect</h3>
+                        <p>If I can't explain why a shadow or blur looks right, I don't ship it. Plain HTML and CSS keep
+                            every decision debuggable.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-index tag">03</span>
+                        <h3>Build for the real device</h3>
+                        <p>A layout isn't finished until it holds up on a small screen, a slow connection, and a
+                            keyboard-only pass.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="feedback">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <div class="section-title">What clients say</div>
+                    <div class="tag">03 — Feedback</div>
+                </div>
+                <div class="reveal">
+                    <div class="testimonial">
+                        <p>"Every version came back tighter than the last. The kind of front-end work where you stop
+                            noticing the interface and just use it."</p>
+                        <div class="testimonial-who"><strong>Sophal Ren</strong> — Founder, Ambre Vangante</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Handed over a rough brief and got back a homepage that actually felt like our brand, down to
+                            the hover states."</p>
+                        <div class="testimonial-who"><strong>Daniela Cruz</strong> — Product Lead, small e-commerce
+                            studio</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FUN FACTS -->
+        <section id="facts">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <div class="section-title">A few extras</div>
+                    <div class="tag">04 — Notes</div>
+                </div>
+                <div class="facts-row reveal">
+                    <div class="fact-cell">
+                        <div class="n">8px</div>
+                        <div class="l">default spacing unit, no exceptions</div>
+                    </div>
+                    <div class="fact-cell">
+                        <div class="n">3</div>
+                        <div class="l">monitors, mostly for checking breakpoints</div>
+                    </div>
+                    <div class="fact-cell">
+                        <div class="n">02:00</div>
+                        <div class="l">the hour most CSS bugs get fixed</div>
+                    </div>
+                    <div class="fact-cell">
+                        <div class="n">∞</div>
+                        <div class="l">tabs of MDN currently open</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT CTA -->
+        <section id="contact">
+            <div class="wrap">
+                <div class="contact-box reveal">
+                    <div class="tag">05 — Contact</div>
+                    <div class="contact-title">Want to work together?</div>
+                    <div class="contact-links">
+                        <a href="mailto:you@example.com">you@example.com</a>
+                        <a href="index.html#contact">Back to homepage</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Built by hand, in HTML &amp; CSS — Phnom Penh
+    </footer>
+
+    <script>
+        // mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            const isOpen = navLinks.style.display === 'flex';
+            navLinks.style.display = isOpen ? 'none' : 'flex';
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '58px';
+            navLinks.style.right = '24px';
+            navLinks.style.background = '#fff';
+            navLinks.style.border = '1px solid var(--bg-line)';
+            navLinks.style.padding = '16px 24px';
+            navLinks.style.gap = '16px';
+        });
+
+        // scroll reveal
+        const revealEls = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealEls.forEach(el => io.observe(el));
+    </script>
+
+</body>
+
+</html>
