@@ -3,227 +3,170 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meridian — Fragrance Mapped to Place</title>
+<title>Your Name — Frontend Developer &amp; Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300..700,0..1&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Coordinate ticker: signature element, updates as you scroll -->
-<div class="coord-ticker" id="coordTicker">
-  <span class="coord-value" id="coordValue">41.9028° N, 12.4964° E</span>
-  <span class="coord-label" id="coordLabel">VIA APPIA — ORIGIN</span>
-</div>
-
-<header class="nav">
-  <a href="#top" class="nav-mark">MERIDIAN</a>
-  <nav class="nav-links">
-    <a href="#atlas">Atlas</a>
-    <a href="#craft">Craft</a>
-    <a href="#philosophy">Journal</a>
-    <a href="#dispatch">Dispatch</a>
-  </nav>
-  <button class="nav-bag" aria-label="View bag">Bag (0)</button>
-  <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+<header>
+  <div class="nav">
+    <div class="nav-mark">YOUR<span>/</span>NAME</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">Menu</button>
+  </div>
 </header>
 
 <main>
-
   <!-- HERO -->
-  <section class="hero" id="top" data-coord="0.0000° N, 0.0000° E" data-label="PRIME MERIDIAN">
-    <div class="hero-grain"></div>
-    <p class="eyebrow">A house of fragrance, plotted by coordinate</p>
-    <h1 class="hero-headline">Every place<br>has a scent.<br><em>We bottled the&nbsp;coordinates.</em></h1>
-    <p class="hero-sub">Five perfumers, five latitudes. Each Meridian fragrance is composed on location — recorded, not imagined — then distilled into a single bottle you can carry anywhere.</p>
-    <div class="hero-actions">
-      <a href="#atlas" class="btn btn-primary">Explore the Atlas</a>
-      <a href="#craft" class="btn btn-ghost">How it's made</a>
-    </div>
-    <div class="hero-scroll-cue">Scroll south ↓</div>
-  </section>
+  <section class="hero" id="home">
+    <div class="hero-inner crop">
+      <span class="crop-tr"></span><span class="crop-bl"></span>
+      <div class="hero-doc-id tag">Doc — 001 / Home</div>
 
-  <!-- COLLECTION / ATLAS -->
-  <section class="atlas" id="atlas" data-coord="19.0760° N, 72.8777° E" data-label="ATLAS — FULL COLLECTION">
-    <div class="section-head">
-      <span class="section-kicker">01 — The Atlas</span>
-      <h2>Five places, bottled</h2>
-      <p>Each fragrance is named for its origin, not for a mood. Wear the place, not the marketing.</p>
-    </div>
+      <div class="eyebrow tag">Available for select projects</div>
+      <h1>Frontend developer &amp; interface <span class="accent-word">designer.</span></h1>
+      <p class="role-line">I'm <strong>Your Name</strong>, based in Phnom Penh — I build clean, detail-obsessed interfaces in HTML, CSS, and React, from glassmorphism forms to full product front-ends.</p>
 
-    <div class="scent-grid">
+      <div class="dim"><span class="dim-line"></span> spacing checked at 8px grid</div>
 
-      <article class="scent-card" style="--card-accent:#B5563A;">
-        <div class="scent-coord">41.9028° N, 12.4964° E</div>
-        <h3>Via Appia</h3>
-        <p class="scent-place">Rome, Italy</p>
-        <p class="scent-notes"><span>Top</span> Fig leaf &nbsp;·&nbsp; <span>Heart</span> Travertine dust &nbsp;·&nbsp; <span>Base</span> Warm leather</p>
-        <div class="scent-foot">
-          <span class="scent-price">$185</span>
-          <button class="btn-add">Add to bag</button>
-        </div>
-      </article>
-
-      <article class="scent-card" style="--card-accent:#2F5C56;">
-        <div class="scent-coord">19.0760° N, 72.8777° E</div>
-        <h3>Monsoon Gate</h3>
-        <p class="scent-place">Mumbai, India</p>
-        <p class="scent-notes"><span>Top</span> Wet jasmine &nbsp;·&nbsp; <span>Heart</span> Green cardamom &nbsp;·&nbsp; <span>Base</span> Rain on stone</p>
-        <div class="scent-foot">
-          <span class="scent-price">$185</span>
-          <button class="btn-add">Add to bag</button>
-        </div>
-      </article>
-
-      <article class="scent-card" style="--card-accent:#4A6FA5;">
-        <div class="scent-coord">59.3293° N, 18.0686° E</div>
-        <h3>North Light</h3>
-        <p class="scent-place">Stockholm, Sweden</p>
-        <p class="scent-notes"><span>Top</span> Birch sap &nbsp;·&nbsp; <span>Heart</span> Cold linen &nbsp;·&nbsp; <span>Base</span> Juniper smoke</p>
-        <div class="scent-foot">
-          <span class="scent-price">$195</span>
-          <button class="btn-add">Add to bag</button>
-        </div>
-      </article>
-
-      <article class="scent-card" style="--card-accent:#C6A15B;">
-        <div class="scent-coord">36.3932° N, 25.4615° E</div>
-        <h3>Salt Meridian</h3>
-        <p class="scent-place">Santorini, Greece</p>
-        <p class="scent-notes"><span>Top</span> Sea fig &nbsp;·&nbsp; <span>Heart</span> White musk &nbsp;·&nbsp; <span>Base</span> Mineral salt</p>
-        <div class="scent-foot">
-          <span class="scent-price">$195</span>
-          <button class="btn-add">Add to bag</button>
-        </div>
-      </article>
-
-      <article class="scent-card" style="--card-accent:#8C4A2F;">
-        <div class="scent-coord">33.7490° N, 84.3880° W</div>
-        <h3>Red Clay</h3>
-        <p class="scent-place">Georgia, United States</p>
-        <p class="scent-notes"><span>Top</span> Tobacco flower &nbsp;·&nbsp; <span>Heart</span> Dried rose &nbsp;·&nbsp; <span>Base</span> Terracotta</p>
-        <div class="scent-foot">
-          <span class="scent-price">$185</span>
-          <button class="btn-add">Add to bag</button>
-        </div>
-      </article>
-
-      <article class="scent-card scent-card--set" style="--card-accent:#10202B;">
-        <div class="scent-coord">ALL FIVE</div>
-        <h3>The Discovery Set</h3>
-        <p class="scent-place">5 × 5ml, travel case included</p>
-        <p class="scent-notes">Every coordinate, in miniature. The way most people meet the house.</p>
-        <div class="scent-foot">
-          <span class="scent-price">$95</span>
-          <button class="btn-add">Add to bag</button>
-        </div>
-      </article>
-
+      <div class="cta-row">
+        <a href="#work" class="btn btn-primary">View selected work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
     </div>
   </section>
 
-  <!-- CRAFT / PROCESS -->
-  <section class="craft" id="craft" data-coord="48.8566° N, 2.3522° E" data-label="ATELIER — PARIS">
-    <div class="section-head section-head--light">
-      <span class="section-kicker">02 — The Craft</span>
-      <h2>Composed on location. Never in a lab alone.</h2>
-    </div>
-
-    <ol class="process">
-      <li>
-        <span class="process-num">01</span>
-        <h3>Sourced</h3>
-        <p>Our perfumer travels to the place itself and works with local growers and distillers to source raw material within the same season it's harvested.</p>
-      </li>
-      <li>
-        <span class="process-num">02</span>
-        <h3>Recorded</h3>
-        <p>Field notes are taken on-site — humidity, stone, rain, smoke — the ambient character no formula sheet can supply from a desk.</p>
-      </li>
-      <li>
-        <span class="process-num">03</span>
-        <h3>Distilled</h3>
-        <p>Extraction happens close to the source, keeping transport and time-to-distillation as short as the terrain allows.</p>
-      </li>
-      <li>
-        <span class="process-num">04</span>
-        <h3>Blended in Paris</h3>
-        <p>Five origin extracts return to our Paris atelier, where the final accord is set, tested, and bottled by hand in small batches.</p>
-      </li>
-    </ol>
-  </section>
-
-  <!-- PHILOSOPHY -->
-  <section class="philosophy" id="philosophy" data-coord="35.6762° N, 139.6503° E" data-label="JOURNAL — FIELD NOTES">
-    <div class="philosophy-media" aria-hidden="true">
-      <div class="philosophy-map"></div>
-    </div>
-    <div class="philosophy-text">
-      <span class="section-kicker">03 — The Journal</span>
-      <h2>A perfume should tell you where you are, not just who you are.</h2>
-      <p>Most fragrance is built around a feeling — confidence, seduction, memory. We started from somewhere else: a place. A specific latitude and longitude, with weather, geology, and a season attached to it.</p>
-      <p>Meridian keeps a running field journal from every trip — the raw notes our perfumer takes before a single accord is mixed. It's the part of the process most houses don't show you.</p>
-      <a href="#" class="text-link">Read the field notes →</a>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-title">About</div>
+        <div class="tag">02 — Profile</div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>I care about the details most people scroll past — the 2px of misalignment, the transition that's 40ms too slow, the focus state nobody remembers to style. That attention shows up in everything from <strong>sign-up flows</strong> to <strong>full landing pages</strong>.</p>
+          <p>My work leans toward interfaces with real texture: glassmorphism panels, animated gradient borders, layered depth — built in plain HTML and CSS whenever possible, so every effect is something I fully understand and can debug down to the selector.</p>
+          <p>Currently taking on freelance and contract front-end work, especially projects that need a strong visual point of view.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card"><div class="n">5+</div><div class="l">UI components &amp; layouts shipped</div></div>
+          <div class="stat-card"><div class="n">100%</div><div class="l">Hand-written HTML / CSS, no framework bloat</div></div>
+          <div class="stat-card"><div class="n">PP</div><div class="l">Based in Phnom Penh, working with clients worldwide</div></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- DISPATCH / NEWSLETTER -->
-  <section class="dispatch" id="dispatch" data-coord="0.0000° N, 0.0000° E" data-label="THE ATLAS DISPATCH">
-    <h2>Get the next coordinate first</h2>
-    <p>One email a month, when a new place is added to the atlas. No noise between.</p>
-    <form class="dispatch-form" onsubmit="return false;">
-      <input type="email" placeholder="you@somewhere.com" required aria-label="Email address">
-      <button type="submit" class="btn btn-primary">Join the Dispatch</button>
-    </form>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-title">Skills</div>
+        <div class="tag">03 — Stack</div>
+      </div>
+      <div class="skills-grid reveal">
+        <span class="skill-chip">HTML5</span>
+        <span class="skill-chip">CSS3 / Grid &amp; Flexbox</span>
+        <span class="skill-chip">Glassmorphism &amp; UI Effects</span>
+        <span class="skill-chip">CSS Animations</span>
+        <span class="skill-chip">Responsive Design</span>
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">React</span>
+        <span class="skill-chip">Form &amp; UX Design</span>
+        <span class="skill-chip">Cross-browser Debugging</span>
+        <span class="skill-chip">Typography Systems</span>
+      </div>
+    </div>
   </section>
 
+  <!-- WORK -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-title">Selected Work</div>
+        <div class="tag">04 — Projects</div>
+      </div>
+      <div class="work-grid reveal">
+        <div class="work-card">
+          <div class="work-thumb"></div>
+          <h3>Glassmorphism Login Form</h3>
+          <p>Frosted-glass sign-in panel with a custom background and subtle depth.</p>
+          <div class="work-meta"><span>HTML</span><span>CSS</span></div>
+        </div>
+        <div class="work-card">
+          <div class="work-thumb"></div>
+          <h3>Event Registration UI</h3>
+          <p>Dark glassmorphism form with animated gradient borders and entrance motion.</p>
+          <div class="work-meta"><span>HTML</span><span>CSS</span><span>Animation</span></div>
+        </div>
+        <div class="work-card">
+          <div class="work-thumb"></div>
+          <h3>Feed-Style Layout Clone</h3>
+          <p>Flexbox-driven social feed layout, rebuilt from the ground up.</p>
+          <div class="work-meta"><span>HTML</span><span>CSS</span><span>Flexbox</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box reveal">
+        <div class="tag">05 — Contact</div>
+        <div class="contact-title">Let's build something detail-perfect.</div>
+        <div class="contact-links">
+          <a href="mailto:you@example.com">you@example.com</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Dribbble</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer class="footer">
-  <div class="footer-top">
-    <span class="nav-mark">MERIDIAN</span>
-    <nav class="footer-links">
-      <a href="#atlas">Atlas</a>
-      <a href="#craft">Craft</a>
-      <a href="#philosophy">Journal</a>
-      <a href="#">Shipping</a>
-      <a href="#">Contact</a>
-    </nav>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Meridian Fragrance House. Composed on location, bottled in Paris.</span>
-  </div>
+<footer>
+  Built by hand, in HTML &amp; CSS — Phnom Penh
 </footer>
 
 <script>
-  // Signature interaction: coordinate ticker updates with the section in view
-  const ticker = document.getElementById('coordTicker');
-  const coordValue = document.getElementById('coordValue');
-  const coordLabel = document.getElementById('coordLabel');
-  const sections = document.querySelectorAll('[data-coord]');
+  // mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.querySelector('.nav-links');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = navLinks.style.display === 'flex';
+    navLinks.style.display = isOpen ? 'none' : 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.position = 'absolute';
+    navLinks.style.top = '58px';
+    navLinks.style.right = '24px';
+    navLinks.style.background = '#fff';
+    navLinks.style.border = '1px solid var(--bg-line)';
+    navLinks.style.padding = '16px 24px';
+    navLinks.style.gap = '16px';
+  });
 
-  const observer = new IntersectionObserver((entries) => {
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        coordValue.textContent = entry.target.dataset.coord;
-        coordLabel.textContent = entry.target.dataset.label;
+      if (entry.isIntersecting){
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
       }
     });
-  }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
-
-  sections.forEach(s => observer.observe(s));
-
-  // Show ticker only after scrolling past the hero
-  window.addEventListener('scroll', () => {
-    ticker.classList.toggle('coord-ticker--visible', window.scrollY > 80);
-  });
-
-  // Mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  navToggle.addEventListener('click', () => {
-    document.querySelector('.nav').classList.toggle('nav--open');
-  });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
 </script>
 
 </body>
